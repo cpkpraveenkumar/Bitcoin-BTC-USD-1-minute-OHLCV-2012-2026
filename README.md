@@ -99,6 +99,7 @@ The source file should contain the standard Kaggle columns:
 ```text
 Bitcoin_Analytics_Full_Pipeline.ipynb  # Complete end-to-end analysis notebook
 README.md                              # Project documentation
+REPORT.md                              # Complete project report
 requirements.txt                       # Python and Jupyter dependencies
 ```
 
