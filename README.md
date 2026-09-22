@@ -31,18 +31,6 @@ Start Jupyter or open the notebook in VS Code:
 jupyter notebook Bitcoin_Analytics_Full_Pipeline.ipynb
 ```
 
-## Expected folders
-
-The notebook currently uses the following working layout:
-
-```text
-archive/
-|-- btcusd_1-min_data.csv
-`-- out/
-```
-
-Create the output directory before running the notebook. Update the absolute paths in the notebook if your dataset is stored elsewhere.
-
 ## Running the pipeline
 
 Run the notebook cells from top to bottom. The stages are:
@@ -58,10 +46,7 @@ Run the notebook cells from top to bottom. The stages are:
 
 ## Outputs
 
-Results are written to `out/`, including cleaned and aggregated Parquet files, JSON summaries, and charts `c1` through `c17`. The notebook's final markdown also references `REPORT.md` and `PraveenKumarC_ProjectReport.docx` as optional report deliverables generated from these outputs.
-
-## Notes
-
-- The source CSV is large, so sufficient disk space and memory are required.
-- This project is for historical analysis and research. It is not financial advice.
-- The notebook is currently unexecuted; run it in order to generate the outputs.
+- Parquet: `btc_1min_clean.parquet`, `btc_daily.parquet`, `btc_monthly.parquet`, `btc_yearly.parquet`, `daily_regimes.parquet`
+- CSV: `hourly_pattern.csv`
+- JSON: `audit_01.json`, `summary_daily.json`, `extra_eda.json`, `stats_04.json`, `anomaly_seg_05.json`, `ml_06.json`, `ml_final_06.json`, `ts_07.json`
+- Charts: `c1_log_close.png` through `c17_dashboard.png` (17 PNG files)

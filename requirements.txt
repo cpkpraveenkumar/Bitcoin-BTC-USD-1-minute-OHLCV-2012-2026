@@ -1,5 +1,7 @@
 jupyter
+notebook
 ipykernel
+IPython
 matplotlib
 numpy
 pandas
